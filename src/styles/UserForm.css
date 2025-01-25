@@ -1,0 +1,55 @@
+.add-user-form {
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-user-form h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .add-user-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .add-user-form input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .add-user-form input:focus {
+    border-color: #4caf50;
+  }
+  
+  .add-user-form button {
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-user-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .add-user-form button:active {
+    background-color: #3e8e41;
+  }
+  

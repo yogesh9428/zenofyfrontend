@@ -1,0 +1,100 @@
+/* src/App.css */
+
+/* Goal Summary Section */
+.goal-summary {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.goal-summary h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.goal-summary p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #555;
+}
+
+.goal-summary strong {
+  color: #333;
+  font-weight: 600;
+}
+
+/* General Styles */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+/* AddUserForm */
+.add-user-form {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-user-form h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.add-user-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-user-form input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.add-user-form input:focus {
+  border-color: #4caf50;
+}
+
+.add-user-form button {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-user-form button:hover {
+  background-color: #45a049;
+}
+
+.add-user-form button:active {
+  background-color: #3e8e41;
+}

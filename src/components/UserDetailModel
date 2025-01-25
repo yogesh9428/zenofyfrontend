@@ -1,0 +1,26 @@
+// src/components/UserDetailModel.js
+import React from 'react';
+import './UserDetailModel.css';
+
+const UserDetailModel = ({ user, closeModal }) => {
+  return (
+    <div className="user-detail-model-overlay" onClick={closeModal}>
+      <div className="user-detail-model-content" onClick={(e) => e.stopPropagation()}>
+        <h2>{user.name}'s Goals</h2>
+        <p><strong>Email:</strong> {user.email}</p>
+        <ul>
+          {user.goals.map((goal, index) => (
+            <li key={index} className="goal-item">
+              <strong>{goal.title}</strong>
+              <p><strong>Deadline:</strong> {goal.deadline}</p>
+              <p><strong>Status:</strong> <span className={goal.status.toLowerCase()}>{goal.status}</span></p>
+            </li>
+          ))}
+        </ul>
+        <button onClick={closeModal}>Close</button>
+      </div>
+    </div>
+  );
+};
+
+export default UserDetailModel;

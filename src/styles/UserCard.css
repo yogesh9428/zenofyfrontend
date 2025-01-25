@@ -1,0 +1,119 @@
+.user-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .user-card:hover {
+    transform: translateY(-5px); /* Hover effect */
+  }
+  
+  .user-card.clicked {
+    position: fixed;          /* Fixed to viewport */
+    top: 50%;                 /* Center vertically */
+    left: 50%;                /* Center horizontally */
+    transform: translate(-50%, -50%);  /* Offset to exactly center the card */
+    width: 70%;               /* Optional: you can adjust the size */
+    z-index: 1000;            /* Ensure the card is on top */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  .user-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .user-card-header h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .user-email {
+    color: #777;
+    font-size: 14px;
+  }
+  
+  .user-card-body {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #444;
+  }
+  
+  .goal-details {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .goal-details h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #444;
+  }
+  
+  .goal-details ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .goal-details li {
+    margin-bottom: 15px;
+  }
+  
+  .goal-details li h5 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .goal-details li p {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 500px;
+    max-height: 80%;
+    overflow-y: auto;
+  }
+  
+  .close {
+    font-size: 28px;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #ff0000;
+  }
+  
